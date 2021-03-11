@@ -71,11 +71,7 @@ const Detail = () => {
           descriptionEN={info.strDescriptionEN}
           descriptionFR={info.strDescriptionFR}
         />
-        <SocialMediaSection
-          twitter={info.strTwitter}
-          facebook={info.strFacebook}
-          youtube={info.strYoutube}
-        />
+        <SocialMediaSection />
       </section>
     </>
   );
