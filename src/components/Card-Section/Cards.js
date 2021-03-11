@@ -29,7 +29,7 @@ const Cards = (props) => {
   return (
     <div className="league-item  text-center">
       <div className="league-img mt-5">
-        <img src={strLogo || img} alt="..." />
+        <img src={strLogo || img} alt="" />
       </div>
       <div className="league-name mt-4">
         <h4 className="mx-auto">
