@@ -1,0 +1,8 @@
+.league-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  row-gap: 50px;
+  box-sizing: border-box;
+  background-color: #0e0a2a;
+  padding: 35px;
+}

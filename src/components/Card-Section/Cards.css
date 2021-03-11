@@ -1,0 +1,11 @@
+.league-item {
+  margin: auto;
+  width: 370px;
+  height: 362px;
+  background-color: #dee2e6;
+}
+
+.league-img img {
+  width: 239px;
+  height: 100px;
+}

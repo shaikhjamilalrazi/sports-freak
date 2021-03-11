@@ -1,0 +1,16 @@
+.detail-content {
+  box-sizing: border-box;
+  background-color: #0e0a2a;
+  padding: 20px;
+}
+
+.detail {
+  border-radius: 15px;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.width {
+  width: 90%;
+  margin: auto;
+}
