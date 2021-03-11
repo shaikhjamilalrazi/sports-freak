@@ -7,18 +7,24 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-const SocialMediaSection = () => {
+const SocialMediaSection = (props) => {
+  const { twitter, facebook, youtube } = props;
   return (
-    // social
     <div className="d-flex justify-content-center">
       <div className="social twitter">
-        <FontAwesomeIcon icon={faTwitter} size="2x" />
+        <a href={`https://${twitter}`} rel="noreferrer" target="_blank">
+          <FontAwesomeIcon icon={faTwitter} size="2x" />
+        </a>
       </div>
       <div className="social facebook">
-        <FontAwesomeIcon icon={faFacebookF} size="2x" />
+        <a href={`https://${facebook}`} rel="noreferrer" target="_blank">
+          <FontAwesomeIcon icon={faFacebookF} size="2x" />
+        </a>
       </div>
       <div className="social youtube">
-        <FontAwesomeIcon icon={faYoutube} size="2x" />
+        <a href={`https://${youtube}`} rel="noreferrer" target="_blank">
+          <FontAwesomeIcon icon={faYoutube} size="2x" />
+        </a>
       </div>
     </div>
   );

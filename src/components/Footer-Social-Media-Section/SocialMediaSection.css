@@ -12,8 +12,12 @@
   background-color: red;
 }
 .social {
-  color: #ffffff;
   padding: 10px;
   margin: 10px;
   border-radius: 100%;
+}
+
+a {
+  color: #f8f8f8;
+  text-decoration: none;
 }

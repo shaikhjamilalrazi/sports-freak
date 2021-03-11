@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Cards.css";
 import img from "../../Logo/image-1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,7 +7,18 @@ import { useHistory } from "react-router";
 
 const Cards = (props) => {
   const { leagues } = props;
-  const { idLeague, strLeagueAlternate, strSport, strLogo } = leagues;
+  const { idLeague, strLeagueAlternate, strSport } = leagues;
+
+  const [imageList, setImageList] = useState([]);
+
+  useEffect(() => {
+    const url = `https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${idLeague}`;
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setImageList(data.leagues[0]));
+  }, [idLeague]);
+
+  const { strLogo } = imageList;
 
   const history = useHistory();
   const showDetail = (id) => {
