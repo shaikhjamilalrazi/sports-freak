@@ -1,6 +1,6 @@
 # Sports Freaks React App
 
-Site Link [Hosted By Netlify](https://sportfr.netlify.app/).
+Site Link [Sports Freak](https://sportfr.netlify.app/).
 
 ### `Technology used in this website`
 
